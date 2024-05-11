@@ -1,0 +1,8 @@
+services:
+  lab3:
+    build:
+      context: .
+    ports:
+      - 8000:8000
+
+
