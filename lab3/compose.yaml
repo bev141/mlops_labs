@@ -1,5 +1,6 @@
 services:
   lab3:
+    image: bev1/mlops-lab3:0.1
     build:
       context: .
     ports:

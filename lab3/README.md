@@ -15,3 +15,11 @@ docker compose up -d
 Чтобы получить класс ириса нужно отправить POST запрос на http://localhost:8000/predict/<br>
 В теле запроса должны быть параметры sepal_length, sepal_width, petal_length, petal_width в формате json.<br>
 Для удобства тестирования в файле `src/test-api.ipynb` подготовлен jupiter notebook который отправляет POST запрос к API и содержит несколько примеров.
+
+## Dockerhub
+
+Образ был загружен в dockerhub: https://hub.docker.com/r/bev1/mlops-lab3<br>
+Сейчас можно запустить образ даже не клонируя репозитарий:
+```
+docker run -p 8000:8000 bev1/mlops-lab3:0.1
+```
